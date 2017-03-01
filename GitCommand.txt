@@ -1,0 +1,16 @@
+**********create a repository***********
+git bash at the directory where you want to creat a repository
+and just some normal command 
+    mkdir "abc" //creat an directory
+    cd "abc"    //enter the directory
+    pwd //shows the present path 
+finally a git command
+    git init
+**********commit your files to repository***********
+creat some files/a file at the repository you just created(please don't use notepad.notepad++ is fine )
+like def.txt
+    git add def.txt
+    git commit -m "added a file"
+remember add first commit later. 
+And it's general to add a bunch of files and commit them at one time.
+
