@@ -17,9 +17,12 @@ and it's general to add a bunch of files and commit them at one time.
     git status  
     git diff
     git diff --cached
+    git diff HEAD --readme.txt
 git diff compares the diff between workspace and stage
 --cached sompares the diff between stage and master
+fianl one only shows the diff in readme .txt(also between workspace and stage)
     cat readme.txt  /shows the contents of readme.txt
+    
 **********reset the version***********
     git log
     git log --pretty=oneline
