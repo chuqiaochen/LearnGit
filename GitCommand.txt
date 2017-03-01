@@ -11,6 +11,6 @@ creat some files/a file at the repository you just created(please don't use note
 like def.txt
     git add def.txt
     git commit -m "added a file"
-remember add first commit later. 
-And it's general to add a bunch of files and commit them at one time.
+remember "add" first "commit" later. 
+and it's general to add a bunch of files and commit them at one time.
 
