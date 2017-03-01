@@ -19,6 +19,7 @@ and it's general to add a bunch of files and commit them at one time.
     git diff --cached
 git diff compares the diff between workspace and stage
 --cached sompares the diff between stage and master
+    cat readme.txt  /shows the contents of readme.txt
 **********reset the version***********
     git log
     git log --pretty=oneline
@@ -29,6 +30,6 @@ or you can use head~10 instead of ten "^"
     git reflog  /shows all the command you have inputed
 you could find the version and input like:
     git reset --hard 3628164
-the num represents ID of version only several num at front is needed but not too less 
+the num/num+letter represents ID of version only several num at front is needed but not too less 
 for it might match to several versions
 
