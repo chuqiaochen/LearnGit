@@ -7,10 +7,28 @@ and just some normal command
 finally a git command
     git init
 **********commit your files to repository***********
-creat some files/a file at the repository you just created(please don't use notepad.notepad++ is fine )
+creat some files/a file at the repository you just created(please don't use notepad.notepad++ is fine)
 like def.txt
     git add def.txt
     git commit -m "added a file"
 remember "add" first "commit" later. 
 and it's general to add a bunch of files and commit them at one time.
+**********check the status and diff of files***********
+    git status  
+    git diff
+    git diff --cached
+git diff compares the diff between workspace and stage
+--cached sompares the diff between stage and master
+**********reset the version***********
+    git log
+    git log --pretty=oneline
+check all the the version committed, second one is shorter
+    git reset --hard Head^  /return to the previous version
+number of "^" represents how many version you want to roll back
+or you can use head~10 instead of ten "^"
+    git reflog  /shows all the command you have inputed
+you could find the version and input like:
+    git reset --hard 3628164
+the num represents ID of version only several num at front is needed but not too less 
+for it might match to several versions
 
