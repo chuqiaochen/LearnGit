@@ -32,7 +32,7 @@ check all the the version committed, second one is shorter
     git reset --hard Head^  /return to the previous version
 number of "^" represents how many version you want to roll back
 or you can use head~10 instead of ten "^"
-    git reflog  /shows all the command you have inputed
+    git reflog  /shows all the command you have executed
 you could find the version and input like:
     git reset --hard 3628164
 the num/num+letter represents ID of version only several num at front is needed but not too less 
@@ -46,3 +46,24 @@ it's important that you know the difference between stage and master
 working directory->add->stage->commit->master
 master->reset->stage->checkout->working directory
 
+**********Add your SSH key to an Origin***********
+    ssh-keygen -t rsa -C "youremail@example.com"
+press enter all way down
+and the SSH key is kept in C:\Users\t460p\.ssh\
+with id_rsa as the private key and id_rsa.pub the public one
+fill in your public SSH key in your GitHub account so that it can identify your commit
+with the unique SSH key in your PC
+and you also could add several different key if you own several smart devices
+
+**********push your master to Origin***********
+creat an empty repository at GitHub
+    git remote add origin git@github.com:chuqiaochen/LearnGit.git
+Origin is the unwritten name of the remote repository
+the first time you connect to github you might get a warnning "...can't be established"
+this is the SSH connect that need you to confirm that the RSA key fingerprint is from GitHub
+once you enter yes the warning won't appear anymore for you have add the key of GitHub to the list of known host
+    git push -u origin master
+pushs your master to origin and u means you make origin the unritten remote repository
+    git push origin master
+now every time you have updated your files this command could be used to push your master to GitHub
+but remember to commit to the local repository first
