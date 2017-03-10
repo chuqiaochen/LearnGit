@@ -39,4 +39,10 @@ the num/num+letter represents ID of version only several num at front is needed 
 for it might match to several versions
 
 **********change***********
+just do as the git status says
+    rm test.txt     /remove the file in working directory
+    git rm test.txt /remove the file in stage
+it's important that you know the difference between stage and master
+working directory->add->stage->commit->master
+master->reset->stage->checkout->working directory
 
